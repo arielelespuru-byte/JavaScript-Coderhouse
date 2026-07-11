@@ -1,0 +1,22 @@
+const nombreUsuario = prompt("Por favor, ingresa tu nombre:");
+const presupuestoInicialRaw = prompt("¿Cuál es tu presupuesto total para este mes?");
+const costoCatedraRaw = prompt("¿Cuánto cuesta la herramienta o curso que quieres comprar?");
+
+const presupuestoInicial = Number(presupuestoInicialRaw);
+const costoCatedra = Number(costoCatedraRaw);
+
+const saldoRestante = presupuestoInicial - costoCatedra;
+
+const mensajeSaludo = "¡Hola, " + nombreUsuario + "! Bienvenido a tu asistente de presupuesto.";
+const mensajeResultado = `Tras realizar el cálculo, si compras tu herramienta de $${costoCatedra}, te quedará un saldo disponible de $${saldoRestante}.`;
+
+alert(mensajeSaludo);
+console.log(mensajeSaludo);
+
+alert(mensajeResultado);
+console.log(mensajeResultado);
+
+console.log("--- Verificación de Tipos ---");
+console.log("Tipo de nombreUsuario:", typeof nombreUsuario);
+console.log("Tipo de presupuestoInicial:", typeof presupuestoInicial);
+console.log("Tipo de costoCatedra:", typeof costoCatedra);
